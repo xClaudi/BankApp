@@ -53,7 +53,6 @@ namespace BankApp
             {
                 MainPanel.Controls.Add(statForm);
             }
-            Console.WriteLine(this.listView1.SelectedItems[0].Text);
         }
 
         private void MainPanel_Paint(object sender, PaintEventArgs e)
