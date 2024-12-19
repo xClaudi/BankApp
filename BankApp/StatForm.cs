@@ -10,10 +10,13 @@ using System.Windows.Forms;
 
 namespace BankApp
 {
-    public partial class Form1 : Form
+    public partial class StatForm : Form
     {
-        public Form1()
+        public StatForm()
         {
+            this.TopLevel = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Show();
             InitializeComponent();
         }
     }
