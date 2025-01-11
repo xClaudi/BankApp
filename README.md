@@ -94,15 +94,21 @@ Database:
 Obsługuje zapytania SQL, pobieranie danych o kontach i transakcjach.
 
 
-     Klasa	  Dziedziczenie 	Interfejs	Relacja
-   Account	        -	         IAccount  Klasa bazowa
-CurrencyAccount	 Account	        -	   Dziedziczy
-  Transaction	   -	            -	   Kompozycja
-   Database	       -	            -	  Obsługuje bazę
+## Schemat paradygmatu obiektowego
+
+```plaintext
+Klasa            Dziedziczenie     Interfejs    Relacja
+---------------------------------------------------------
+Account          -                 IAccount     Klasa bazowa
+CurrencyAccount  Account           -            Dziedziczy
+Transaction      -                 -            Kompozycja
+Database         -                 -            Obsługuje bazę
+```
 
 6. Diagram klas UML
 Diagram UML dla aplikacji:
 
+```plaintext
 +---------------------+
 |      IAccount       |
 +---------------------+
